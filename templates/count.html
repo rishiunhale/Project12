@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Count</title>
+</head>
+<body>
+<h3>
+    <a href = "{% url 'home' %}">Back to the Home-Page</a>
+
+</h3>
+<h1>Your Text</h1>
+
+{{fulltext}}
+
+
+<br>
+<h2>Length of Words:</h2>
+<h4> Total Words : {{words}}</h4>
+
+<br>
+<h2>Total count:</h2>
+<h4> Total Words appeared at a time : {{word_dict}}</h4>
+
+<br>
+<h2>Total count: using loop</h2>
+
+<h4>
+{% for word,value in word_dict %}
+
+{{word}} = {{value}}
+<br/>
+
+{% endfor %}
+
+
+</h4>
+
+</body>
+</html>

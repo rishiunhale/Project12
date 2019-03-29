@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<h1> This is a Homepage Here!</h1>
+<p> Welcome to our website!</p>
+<br>
+
+{{name}}
+
+<form action= "{% url 'count' %}">
+
+    <textarea name="smalltextarea"  cols="20" rows="15">  </textarea>
+    <br>
+    <input type="submit" value="Count Here!">
+
+</form>
+</body>
+</html>
